@@ -88,9 +88,6 @@ truncation_length = 1
 ".config" = " config"
 "~" = " home"
 
-palette = "catppuccin_macchiato"
-[palettes.catppuccin_macchiato]
-
 [bun]
 style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
