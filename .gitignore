@@ -2,3 +2,6 @@ coc/*
 !extensions
 coc/extensions/*
 !coc/extensions/package.json
+
+nvim/lazy-lock.json
+neofetch
