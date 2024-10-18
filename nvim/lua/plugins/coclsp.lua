@@ -10,7 +10,7 @@ return {
 
     -- Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
     -- delays and poor user experience
-    vim.opt.updatetime = 500
+    vim.opt.updatetime = 100
 
     local keyset = vim.keymap.set
     -- Autocomplete

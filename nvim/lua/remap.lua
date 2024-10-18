@@ -22,8 +22,9 @@ vim.keymap.set("n", "<leader>tu", vim.cmd.tabclose)
 vim.keymap.set("n", "<leader>to", vim.cmd.tabonly)
 
 -- remap difficult to use (on a phone) keys
-vim.keymap.set("n", "e", "<c-right>")
+vim.keymap.set("n", "w", "<c-right>")
 vim.keymap.set("n", "b", "<c-left>")
+vim.keymap.set("n", "e", "w")
 
 vim.keymap.set({"n", "v"}, "h", "F")
 vim.keymap.set({"n", "v"}, "j", "T")
@@ -51,7 +52,10 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
-vim.keymap.set("n", "<leader>d", function () vim.cmd.Noice("dismiss") end)
+vim.keymap.set("n", "<leader>df", function () vim.cmd.Noice("dismiss") end)
 vim.keymap.set("n", "<leader>nf", function () vim.cmd.Telescope("notify") end)
-vim.keymap.set("n", "<leader>di", function () vim.cmd.CocCommand("deno.initializeWorkspace") end)
+
+local gitignore = require("gitignore")
+vim.keymap.set("n", "<leader>ig", gitignore.generate)
+vim.keymap.set("n", "<leader>id", function () vim.cmd.CocCommand("deno.initializeWorkspace") end)
 

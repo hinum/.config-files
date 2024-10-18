@@ -1,3 +1,10 @@
+
+function record ()
+  local recordReg = vim.fn.reg_recording()
+  if recordReg == "" then return "" end
+  return "󰑊 " .. recordReg
+end
+
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -25,7 +32,7 @@ return {
       lualine_b = {'branch'},
       lualine_c = {'filename'},
       lualine_x = {'diagnostics'},
-      lualine_y = {'diff'},
+      lualine_y = {'diff', {record, color = { fg = "#e78284" }}},
       lualine_z = {'location'}
     },
     inactive_sections = {
