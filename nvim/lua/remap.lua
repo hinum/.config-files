@@ -34,6 +34,7 @@ vim.keymap.set({"n", "v"}, "m", "N")
 vim.keymap.set({"n", "v"}, "<leader>d", '"_d')
 vim.keymap.set({"n", "v"}, "<leader>p", '"_p')
 vim.keymap.set({"n", "v"}, "<leader>c", '"_c')
+vim.keymap.set("n", "r", '"_r')
 
 -- system clipboard
 vim.keymap.set({"v", "n"}, "<leader>cy", '"+y')

@@ -53,9 +53,9 @@ $nix_shell\
 $conda\
 $meson\
 $spack\
-$directory[](#8caaee) \
+$directory[](#8caaee)\
 \
-([](#51576d)$git_branch[](fg:#414559 bg:#51576d)\
+( [](#51576d)$git_branch[](fg:#414559 bg:#51576d)\
 ($git_status)[](#414559)) 
 """
 
