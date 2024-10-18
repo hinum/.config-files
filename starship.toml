@@ -9,7 +9,6 @@ $cmake\
 $cobol\
 $daml\
 $dart\
-$deno\
 $dotnet\
 $elixir\
 $elm\
@@ -57,8 +56,18 @@ $spack\
 $directory[](#8caaee) \
 \
 ([](#51576d)$git_branch[](fg:#414559 bg:#51576d)\
-$git_status[](#414559) )
+($git_status)[](#414559)) 
 """
+
+right_format = "$character(  $cmd_duration)"
+
+[cmd_duration]
+format = '[$duration](#8caaee)'
+
+[character]
+success_symbol = ''
+error_symbol = '[](bold #e78284)'
+vimcmd_symbol = '[](bold #ef9f76)'
 
 [git_branch]
 format = "[ $branch ]($style)"
@@ -83,177 +92,177 @@ palette = "catppuccin_macchiato"
 [palettes.catppuccin_macchiato]
 
 [bun]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [buf]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [cmake]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [cobol]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [crystal]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [daml]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [dart]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [deno]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [dotnet]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = "[$symbol]($style)"
 
 [elixir]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [elm]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [erlang]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [fennel]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [gleam]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [golang]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [gradle]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [haxe]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [helm]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [java]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [julia]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [kotlin]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [lua]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [meson]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [nim]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [nodejs]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [ocaml]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol(\($switch_indicator$switch_name\) )]($style)'
 
 [opa]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [perl]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [php]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [pulumi]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol$stack]($style)'
 
 [purescript]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [python]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [quarto]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [raku]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [red]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [rlang]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [ruby]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [rust]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [solidity]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [typst]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [swift]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [vagrant]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [vlang]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
 
 [zig]
-style = "bold bg:#8caaee fg:#232634"
+style = "bg:#8caaee fg:#232634"
 format = '[$symbol]($style)'
