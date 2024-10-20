@@ -56,21 +56,17 @@ return {
     })
 
     local lspconf = require("lspconfig")
-    lspconf.util.default_config.capabilities = vim.tbl_extend(
+    local defconf = lspconf.util.default_config
+    defconf.capabilities = vim.tbl_deep_extend(
       "force",
-      lspconf.util.default_config,
+      defconf.capabilities,
       require('cmp_nvim_lsp').default_capabilities())
 
     vim.g.markdown_fenced_languages = { "ts=typescript" }
     lspconf.denols.setup{}
-<<<<<<< Updated upstream
     lspconf.ts_ls.setup{
       root_dir = lspconf.util.root_pattern("package.json"),
       single_file_support = false
     }
-=======
-    lspconf.ts_ls.setup{ root_dir = lspconf.util.root_pattern("package.json")}
-
->>>>>>> Stashed changes
   end
 }
