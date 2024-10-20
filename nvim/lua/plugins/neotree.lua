@@ -42,9 +42,9 @@ return {
         expander_highlight = "NeoTreeExpander",
       },
       icon = {
-        folder_closed = "📁",
-        folder_open = "📂",
-        folder_empty = "🤫",
+        folder_closed = "",
+        folder_open = "",
+        folder_empty = "",
         provider = function(icon, node, state) -- default icon provider utilizes nvim-web-devicons if available
           if node.type == "file" or node.type == "terminal" then
             local success, web_devicons = pcall(require, "nvim-web-devicons")
@@ -62,7 +62,7 @@ return {
         highlight = "NeoTreeFileIcon"
       },
       modified = {
-        symbol = "[+]",
+        symbol = "󱓓",
         highlight = "NeoTreeModified",
       },
       name = {
@@ -78,10 +78,10 @@ return {
           deleted   = "✖",-- this can only be used in the git_status source
           renamed   = "󰁕",-- this can only be used in the git_status source
           -- Status type
-          untracked = "🌚",
-          ignored   = "😞",
-          unstaged  = "🤙",
-          staged    = "🤡",
+          untracked = "",
+          ignored   = "",
+          unstaged  = "",
+          staged    = "󰆓",
           conflict  = "🔥",
         }
       },
