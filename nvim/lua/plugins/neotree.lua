@@ -62,7 +62,7 @@ return {
         highlight = "NeoTreeFileIcon"
       },
       modified = {
-        symbol = "󱓓",
+        symbol = "󰑊",
         highlight = "NeoTreeModified",
       },
       name = {
@@ -80,8 +80,8 @@ return {
           -- Status type
           untracked = "",
           ignored   = "",
-          unstaged  = "",
-          staged    = "󰆓",
+          unstaged  = "",
+          staged    = "",
           conflict  = "🔥",
         }
       },

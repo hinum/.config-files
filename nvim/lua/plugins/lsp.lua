@@ -63,9 +63,14 @@ return {
 
     vim.g.markdown_fenced_languages = { "ts=typescript" }
     lspconf.denols.setup{}
+<<<<<<< Updated upstream
     lspconf.ts_ls.setup{
       root_dir = lspconf.util.root_pattern("package.json"),
       single_file_support = false
     }
+=======
+    lspconf.ts_ls.setup{ root_dir = lspconf.util.root_pattern("package.json")}
+
+>>>>>>> Stashed changes
   end
 }
