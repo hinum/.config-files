@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "coc-tsserver": ">=2.2.0",
-    "coc-eslint": ">=1.7.0",
-    "coc-prettier": ">=9.3.2",
-    "coc-deno": ">=3.15.0",
-    "coc-toml": ">=1.2.5"
-  }
-}

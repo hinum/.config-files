@@ -5,6 +5,14 @@ function record ()
   return "󰑊 " .. recordReg
 end
 
+function lspName ()
+  local bufnr = vim.api.nvim_get_current_buf()
+  local lspServer = vim.lsp.get_clients{ bufnr = bufnr }[1]
+
+  if lspServer == nil then return ""
+  else return lspServer.name end
+end
+
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -31,7 +39,7 @@ return {
       lualine_a = {'mode'},
       lualine_b = {'branch'},
       lualine_c = {'filename'},
-      lualine_x = {'diagnostics'},
+      lualine_x = {'diagnostics', {lspName}},
       lualine_y = {'diff', {record, color = { fg = "#e78284" }}},
       lualine_z = {'location'}
     },
