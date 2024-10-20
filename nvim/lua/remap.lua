@@ -40,7 +40,7 @@ vim.keymap.set("n", "r", '"_r')
 
 -- system clipboard
 -- vim.keymap.set({"v", "n"}, "<leader>cy", '"+y') doesnt work
-vim.keymap.set("n", "<leader>cp", '"+p')
+vim.keymap.set({"v", "n"}, "<leader>cp", '"+p')
 
 -- visual mode
 vim.keymap.set("v", "e", "<c-u>") -- up half a page

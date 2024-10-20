@@ -56,7 +56,10 @@ return {
     })
 
     local lspconf = require("lspconfig")
-    lspconf.util.default_config.capabilities = require('cmp_nvim_lsp').default_capabilities()
+    lspconf.util.default_config.capabilities = vim.tbl_extend(
+      "force",
+      lspconf.util.default_config,
+      require('cmp_nvim_lsp').default_capabilities())
 
     vim.g.markdown_fenced_languages = { "ts=typescript" }
     lspconf.denols.setup{}
@@ -64,6 +67,5 @@ return {
       root_dir = lspconf.util.root_pattern("package.json"),
       single_file_support = false
     }
-
   end
 }
