@@ -63,7 +63,9 @@ return {
       require('cmp_nvim_lsp').default_capabilities())
 
     vim.g.markdown_fenced_languages = { "ts=typescript" }
-    lspconf.denols.setup{}
+    lspconf.denols.setup{
+      root_dir = lspconf.util.root_pattern("deno.json", "deno.jsonc"),
+    }
     lspconf.ts_ls.setup{
       root_dir = lspconf.util.root_pattern("package.json"),
       single_file_support = false

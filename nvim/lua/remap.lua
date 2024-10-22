@@ -21,6 +21,7 @@ vim.keymap.set("n", "<leader>a", vim.cmd.tabnext)
 vim.keymap.set("n", "<leader>tu", vim.cmd.tabclose)
 vim.keymap.set("n", "<leader>to", vim.cmd.tabonly)
 vim.keymap.set("n", "<leader>tnc", "<cmd>.+1,$tabdo :tabc<cr>") -- close every tab to the right
+vim.keymap.set("n", "<leader>tau", "<cmd>bufdo q<cr>") -- close everything
 
 -- remap difficult to use (on a phone) keys
 vim.keymap.set("n", "w", "<c-right>")
