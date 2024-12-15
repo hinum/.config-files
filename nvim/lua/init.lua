@@ -32,5 +32,4 @@ require("lazy").setup({
 
 require("remap")
 vim.cmd.colorscheme "catppuccin"
-vim.cmd.Neotree()
 vim.cmd.bd(1)
