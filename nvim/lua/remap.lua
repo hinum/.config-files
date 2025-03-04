@@ -81,7 +81,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- format on save
 vim.api.nvim_create_autocmd('BufWritePre', {
   callback = function ()
-    if (vim.lsp.buf_is_attached(0)) then
+    local bufnr = vim.api.nvim_get_current_buf()
+    local lspServer = vim.lsp.get_clients{ bufnr = bufnr }[1]
+
+    if lspServer ~= nil and lspServer.name ~= "denols" then
       vim.lsp.buf.format()
     end
   end
